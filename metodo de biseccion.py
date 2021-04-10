@@ -38,6 +38,9 @@ if(f(xi)*f2(xs)<0):
         
 else:
     print('los dos intervalos dados son mayores a 0 introduzca otros')
+raiz=xr(xi,xs)
+cota=abs((xr(xi,xs)-xi)/xr(xi,xs))
+print('la iteracion: '+str(lim+1)+' nos da una raiz de: '+str(raiz)+' con una cota de error de: '+str(cota))
 print()
-print('la solucion de la funcion dada por el metodo biseccion es: '+str(xi))
-print('se hicieron '+str(lim)+" iteraciones")
+print('la solucion de la funcion dada por el metodo biseccion es: '+str(raiz))
+print('se hicieron '+str(lim+1)+" iteraciones")
