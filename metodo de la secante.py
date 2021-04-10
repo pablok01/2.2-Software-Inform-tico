@@ -24,6 +24,8 @@ while abs((ximasuno(ximenos1,xi)-xi)/ximasuno(ximenos1,xi)) > error and lim<iter
     ximenos1=xi
     xi=xi2
     print('la iteracion: '+str(lim)+' nos da una raiz de: '+str(xi)+' con una cota de error de: '+str(cota))
+cota=abs((ximasuno(ximenos1,xi)-xi)/ximasuno(ximenos1,xi))
+print('la iteracion: ' + str(lim+1) + ' nos da una raiz de: ' + str(ximasuno(ximenos1,xi)) + ' con una cota de error de: ' + str(cota))
 print()
-print('la solucion de la funcion dada por el metodo de la secante es: '+str(xi))
-print('se hicieron '+str(lim)+" iteraciones")
+print('la solucion de la funcion dada por el metodo de la secante es: '+str(ximasuno(ximenos1,xi)))
+print('se hicieron '+str(lim+1)+" iteraciones")
